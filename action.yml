@@ -12,4 +12,4 @@ inputs:
 
   runs:
     using: 'docker'
-    image: 'Docker'
+    image: 'Dockerfile'

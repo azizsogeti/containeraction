@@ -5,15 +5,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: run the action
-      id: hello 
-      uses: ./
-      with:
-        myInput: 'abdulaziz al'
-      
-    - name: output
-      run: |
-        echo ${{ steps.hello.outputs.memory }}
-        echo "total memory output"
-      
+      - uses: actions/checkout@v2
+      - name: run the action
+        id: hello 
+        uses: ./
+        with:
+          myInput: 'Awesome'
+        
+      - name: output
+        run: |
+          echo ${{ steps.hello.outputs.memory }}
+          echo "total memory output"
+        

@@ -1,0 +1,15 @@
+name: 'Container action'
+
+inputs:
+  myInput:
+    description: 'Greeting'
+    required: true
+    default: 'Awesome'
+
+  outputs:
+    myOutput: 
+      description: 'Output: total memory'
+
+  runs:
+    using: 'docker'
+    image: 'Docker'
